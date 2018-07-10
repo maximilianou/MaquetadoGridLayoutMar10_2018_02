@@ -59,7 +59,10 @@ aside{
   background-color: yellowgreen;
 }
 
-
+#panelMsg{
+  background-color: orange;
+  grid-column: 1 / -1;  
+}
 
 
 

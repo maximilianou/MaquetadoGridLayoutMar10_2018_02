@@ -45,15 +45,33 @@
         Articulo Tres
         </article>
 
+        <div id="panelMsg"
+             contenteditable="true"
+             >
+          <div>Mensajes:</div>
+          <div id="panelMsgContenido"></div>
+        </div>
     
       </section>
 
       <aside>
         Formulario
+        
+        <input type="text" id="nota_titulo"
+               placeholder="ingrese titulo aqui"
+               />
+
         <button  
                 id="" 
                 class=""
-                onclick="Notas.subir();" >Presione!!</button>
+                onclick="Notas.subir();" 
+                > 
+          Presione!! 
+        </button>
+        <button onclick="Notas.limpiar();" >
+          Limpiar
+        </button>
+        
       </aside>
       
     </div>
