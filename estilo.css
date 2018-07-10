@@ -15,13 +15,10 @@ body{
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);  
-  
-  
 }
 header{
   background-color: orange;
   font-family: 'Snippet', sans-serif;
-  text-align: center;
 /*  grid-column: 1 / -1; */ 
   min-height: 50px;
   
@@ -30,14 +27,13 @@ footer{
   background-color: red;
   color: white;
   font-family: 'Sniglet', cursive;
-  text-align: center;
 /*   grid-column: 1 / -1;  */
   min-height: 50px;
 }
 section{
   background-color: aqua;
   grid-column-start: 2;  
-  grid-column-end: -1;  
+  grid-column-end: -2;  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2px;
@@ -54,3 +50,17 @@ nav{
 section > h1{
    grid-column: 1 / -1;  
 }
+
+footer, header, h1, h2, h3 {
+  text-align: center;
+}
+
+aside{
+  background-color: yellowgreen;
+}
+
+
+
+
+
+
