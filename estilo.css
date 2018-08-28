@@ -31,10 +31,12 @@ footer{
 /*   grid-column: 1 / -1;  */
   min-height: 50px;
 }
-section{
+main{
   background-color: chocolate;
   grid-column-start: 2;  
   grid-column-end: -2;  
+}
+section{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2px;
