@@ -33,15 +33,8 @@ class Notas{
   static limpiar(){
     document.querySelector("#panelMsgContenido").innerHTML = "";
   }
-  static mostrar(){
+  static mostrar(listado, id_contenedor){
 
-          let listado = [ 
- { "id": 100, "titulo":"Mate Calabaza", "descripcion":"Suave", "precio": 100},
- { "id": 102, "titulo":"Mate Alpaca", "descripcion":"Fino", "precio": 500},
- { "id": 104, "titulo":"Mate Madera", "descripcion":"Tipico", "precio": 100},
- { "id": 106, "titulo":"Mate Asta", "descripcion":"Duradero", "precio": 250},
- { "id": 108, "titulo":"Mate Silicona", "descripcion":"De ciudad", "precio": 300}
-                        ];
           let plantilla = `
           ${ listado.map( 
                   comida => 
@@ -55,8 +48,20 @@ class Notas{
                   `
           ).join('') }
           `;
-        document.querySelector('#panelMsgContenido').innerHTML = plantilla;
+        document.querySelector(id_contenedor).innerHTML = plantilla;
 
+  }
+  
+  static mostrarDatosCliente(){
+          let listado = [ 
+ { "id": 100, "titulo":"Mate Calabaza", "descripcion":"Suave", "precio": 100},
+ { "id": 102, "titulo":"Mate Alpaca", "descripcion":"Fino", "precio": 500},
+ { "id": 104, "titulo":"Mate Madera", "descripcion":"Tipico", "precio": 100},
+ { "id": 106, "titulo":"Mate Asta", "descripcion":"Duradero", "precio": 250},
+ { "id": 108, "titulo":"Mate Silicona", "descripcion":"De ciudad", "precio": 300}
+                        ];
+    
+    Notas.mostrar( listado ,'#panelDatosCliente');
   }
   
 }
